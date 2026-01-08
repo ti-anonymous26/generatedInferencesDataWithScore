@@ -1,0 +1,50 @@
+Inference,Description,score,short rationale
+Frequent rain-triggered pauses indicate a consistently wet climate,Repeated rainfall interruptions suggest natural precipitation occurs regularly.,1,Pure climate signal; no person-level behavior implied.
+Infrequent rain-triggered pauses indicate a predominantly dry climate,Long stretches without rain detections show minimal rainfall events.,1,Dryness indicator only; no link to identity or behavior.
+Clusters of rain detections over short periods suggest heavy rainfall episodes,Multiple pauses happening close together imply dense or prolonged rain events.,1,Weather intensity insight only; no personal exposure.
+Long gaps between rain detections indicate extended dry spells,Large intervals without rain-triggered adjustments reflect ongoing lack of precipitation.,1,Dry spell marker; no user or identity signal.
+Sudden bursts of rain detections indicate unexpected or intense storms,"Rapid sequences of rain-related pauses point to abrupt, heavy rainfall.",1,Storm event signal; minimal privacy impact.
+Gradual increase in rain detections indicates transition into a wetter season,Increasing pause frequency signals climatic shifts toward higher rainfall.,1,Seasonal climate trend only; no person-level data.
+Gradual decrease in detections indicates movement into a drier season,Fewer rain-related pauses reflect seasonal reduction in precipitation.,1,Seasonal drying cue; no behavioral detail.
+Rain detections consistently timed in certain months reveal seasonal rainfall patterns,Clustering of detections during specific months indicates established rainy periods.,2,Month-specific rain pattern can hint geography/season but still climate-level.
+Rain detections on consecutive days indicate multi-day rainfall periods,Back-to-back pauses imply rains lasting more than one day.,1,Multi-day weather pattern; no individual behavior.
+"Single isolated rain detection events suggest sporadic, light rain patterns",One-off detections indicate occasional or weak rainfall.,1,Isolated weather event only; negligible privacy risk.
+Frequent short-duration pauses suggest light or intermittent rainfall,Many small interruptions imply drizzle or brief rain events.,1,Drizzle frequency signal; no personal exposure.
+Fewer but longer-duration pauses indicate heavy sustained rainfall,Long pauses reflect concentrated and intense rainfall episodes.,1,Heavy rain duration insight; no user data.
+Rain detections concentrated in early mornings suggest morning rainfall patterns,Time-based clustering reveals that rainfall peaks during early hours.,2,Time-of-day climate signature that weakly hints at locale/timezone.
+Rain detections concentrated at night indicate nighttime rainfall,Nighttime pauses imply rain typically occurs during darker periods.,2,Nighttime timing can hint local climate but not individuals.
+Rain detections occurring immediately after irrigation cycles indicate sensitivity to light rain,"Rain may begin right after watering, or sensors may react to early droplets.",3,"Ties rain signals to irrigation schedule, revealing watering timing/response."
+Long delays between rainfall events suggest stable dry microclimate,Sparse detections show extended rain-free periods.,1,Local dryness cue; no person-level detail.
+Rapid repeat detections after a pause suggest intermittent stop–start rainfall,"Rain begins, stops briefly, and resumes, causing multiple interruptions.",1,Stop-start rain behavior only; no behavioral signal.
+Uniform rain detection across all zones indicates property-wide rainfall,Simultaneous zone pauses imply rainfall is evenly distributed.,1,Even coverage weather cue; minimal personal detail.
+Zone-specific detection variations indicate micro-rainfall patterns,"Some areas detect rain while others do not, suggesting uneven precipitation.",2,Microclimate differences expose some site layout/context but not identity.
+Increasing frequency of pauses suggests approaching rainy season peaks,More frequent rain detections reflect intensifying seasonal patterns.,1,Seasonal ramp-up insight; no user behavior.
+Decreasing frequency of detections suggests rainy season end,Declining rates reflect movement toward drier climate phases.,1,Seasonal tapering clue; minimal privacy impact.
+High frequency of short pauses suggests drizzle-prone conditions,Lots of tiny rainfall events trigger repeated small interruptions.,1,Light-rain tendency only; no personal exposure.
+Long-duration pauses suggest saturating rainfall conditions,Extended stops signal that rainfall is strong and continuous.,1,Sustained rainfall cue; no user or identity signal.
+Sudden detection after long dry periods indicates major weather shift,Rain appearing abruptly after drought shows sudden climatic change.,1,Weather shift indicator only; negligible privacy risk.
+Frequent alternation of detections and non-detections indicates unstable weather,On–off rainfall patterns reflect rapid atmospheric shifts.,1,Volatile weather pattern; no behavioral data.
+Sparse but long detections resemble monsoon-like patterns,"Few rain events, but each is intense and prolonged.",2,Monsoon-like signature may hint region but limited to climate.
+Lack of rain detection during historically rainy periods suggests sensor issues,Absence of expected detections may indicate sensor malfunction or misalignment.,2,"Suggests device malfunction/maintenance state, mildly operational."
+Frequent very short detections imply hypersensitive sensor behavior,Sensor may detect even minimal droplets or mist as rain.,2,Reveals sensor calibration/placement; limited privacy impact.
+Long periods with uninterrupted irrigation indicate dry climate tendencies,Few rain interruptions show persistent dryness.,1,Dry-climate signal; no person-level behavior.
+Multiple detections soon after system installation imply rainy installation period,Initial logs reflect wet climate at deployment time.,3,"Connects conditions to install timing, exposing setup activity window."
+Sudden stop of detections may indicate seasonal transition to dryness,Rain logs cease abruptly as dry season begins.,1,Seasonal shift cue; minimal privacy risk.
+Sudden start of frequent detections indicates arrival of rainy season,Sharp rise in detection activity signals strong seasonal change.,1,Season onset indicator; no user behavior.
+Consistency of long pauses suggests major rainfall impacts,Significant rainfall regularly overrides irrigation needs.,1,Rain impact level only; no personal information.
+Rain detections that rarely pause irrigation indicate light or negligible rain,"Sensor detects rain, but rainfall is insufficient to affect watering.",2,"Shows irrigation continues despite rain, hinting system thresholds/settings."
+Heavy clustering of detections indicates storm seasonality,Storm periods show tightly packed detection events.,1,Storm-season signal only; negligible privacy exposure.
+Extended periods with daily detections show long-running wet spells,Continuous rain across many days reflects sustained wet climate.,1,Prolonged wet weather indicator; no behavioral link.
+Irregular detection timing indicates unstable or unpredictable rainfall,No clear pattern suggests highly variable precipitation.,1,Unpredictable weather cue; no person-level data.
+Rain detection patterns with increasing pause duration indicate intensifying rainfall,Pauses become longer as rainfall grows stronger.,1,Strengthening rain trend; environment only.
+Decreasing pause duration indicates weakening rainfall events,Shorter pauses show rainfall diminishing in intensity.,1,Weakening rainfall trend; no personal exposure.
+Night-only detections may indicate dew or condensation misclassification,Sensors may treat condensation as light rainfall during nighttime.,2,Highlights sensor placement/microclimate quirks; minor operational signal.
+Detections occurring right after irrigation attempts may indicate mist interference,Irrigation spray may trigger rain sensors temporarily.,3,"Links detections to watering actions, revealing irrigation timing/behavior."
+High detection rates after long dry periods indicate sudden shift to wet weather,"Rain returns abruptly, prompting many pauses.",1,Sudden wet-weather shift; no individual behavior revealed.
+Highly variable intervals between detections represent transitional climate,Inconsistent spacing reflects unstable seasonal patterns.,1,Transitional climate volatility; minimal privacy impact.
+Low variability in detection intervals indicates predictable rainfall behavior,Regularly spaced detections show rhythmic rainfall cycles.,1,Predictable rainfall cycle; no personal detail.
+Simultaneous detection across all zones reflects uniform storm coverage,Rainfall equally affects all irrigation areas.,1,Uniform coverage weather cue; no user behavior.
+Rain detections recurring at the same hour daily indicate diurnal rainfall patterns,Consistent timing shows rain follows a daily cycle.,2,Diurnal timing can hint locale/timezone but not identity.
+"Narrow-window detection clustering suggests quick, sharp rainfall events",Rain falls only within tight time ranges before stopping.,1,Short-window rain events; environment only.
+Wide-window detection clustering indicates prolonged rainfall influence,Rain affects irrigation over a broad time span.,1,Long influence of rain; no personal data.
+Persistent rain-induced irrigation cancellations show rainfall dominance,Natural precipitation consistently overrides the need for irrigation.,2,"Shows watering often overridden by rain, mildly exposing upkeep routines."

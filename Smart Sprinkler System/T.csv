@@ -1,0 +1,52 @@
+Inference,Description,score,short rationale
+Persistently high temperature with low humidity indicates strong evaporative demand,"This combination signals rapid loss of moisture from soil and plants due to hot, dry air.",1,Environmental dryness signal; no person-level detail.
+Low temperature with high humidity suggests minimal evaporation potential,"Cool, moist conditions reduce atmospheric moisture loss, lowering irrigation demand.",1,"Cool, moist air reduces evaporation; climate-only insight."
+Rising temperature coupled with falling humidity indicates increasing dryness,"The environment becomes hotter and drier, increasing natural water depletion.",1,"Hotter, drier trend; environmental only."
+Falling temperature with rising humidity indicates decreasing dryness,Cooling and moistening conditions reduce environmental stress on soil moisture.,1,"Cooling, moistening trend; no behavioral linkage."
+Sudden temperature spikes signal abrupt heat events,"Sharp, rapid rises in temperature indicate immediate exposure to intense heat.",1,Heat events only; no user or identity signal.
+Sudden humidity drops indicate rapid drying conditions,A fast decline in humidity suggests quick atmospheric drying or airflow changes.,1,Rapid drying cue; environmental only.
+Daily temperature peaks indicate periods of highest natural evaporation,The warmest part of the day aligns with maximum drying potential.,1,Diurnal warmth pattern; no personal exposure.
+Daily humidity troughs indicate the driest microclimate periods,Low humidity readings mark times of intense atmospheric moisture deficit.,1,Driest times of day; environmental signal only.
+Consistent low humidity throughout the day implies chronically dry conditions,Persistent dryness signals ongoing atmospheric demand for moisture.,1,Chronic dryness indicator; no personal data.
+Consistent high humidity throughout the day suggests stable moisture-rich air,"If humidity remains high, evaporation rates stay naturally low.",1,Moist air persistence; no behavioral clue.
+High nighttime humidity combined with low daytime humidity indicates strong diurnal variation,Humidity swings show significant day–night environmental contrast.,1,Day–night humidity swing; climate-only.
+Temperature plateauing within a narrow band indicates stable microclimate,Minimal temperature variation reflects consistent environmental exposure.,1,Stable temps; environmental stability only.
+Highly variable temperature readings indicate dynamic environmental exposure,"Frequent changes imply abrupt shifts in sunlight, shading, or airflow.",1,Dynamic exposure signal; no personal info.
+Rapid rise and fall of humidity suggests transient moisture events,"Short-lived humidity changes may indicate dew, fog, or quick environmental shifts.",1,Short moisture events; environmental only.
+Temperature–humidity correlation reveals environmental consistency,Predictable coupling of heat increases with humidity decreases indicates stable patterns.,1,Coupled patterns show consistent climate; no personal exposure.
+Lack of correlation indicates irregular climatic conditions,Temperature and humidity moving independently imply unpredictable microclimate behavior.,1,Irregular climate behavior; no behavioral data.
+Extended periods of high temperature and high humidity indicate heat stress,Warm and moisture-rich air increases plant stress and reduces cooling efficiency.,1,Heat-stress conditions; no person-level linkage.
+Extended periods of low temperature and low humidity indicate cold-dry stress,Cold air lacking moisture restricts plant growth and increases dryness stress.,1,Cold-dry stress indicator; environmental only.
+Humidity spikes without temperature change indicate isolated moisture events,Sudden moisture increases may arise from dew formation or localized humidity bursts.,1,Isolated moisture upticks; no personal context.
+Temperature spikes without humidity change reflect heat without moisture influence,Increasing heat with stable dryness intensifies evaporative demand.,1,Heat rise only; environmental signal.
+Very low humidity readings indicate risk of accelerated soil desiccation,Extremely dry air rapidly draws moisture from surrounding environments.,1,Extreme dryness cue; no personal data.
+Very high humidity readings suggest reduced need for irrigation,Near-saturation air conditions limit evaporation significantly.,1,High humidity reduces evaporation; climate-only.
+Frequent temperature peaks near sensor maximum indicate overheating risk,High readings imply prolonged heat exposure that may stress vegetation or systems.,2,Reveals sensor placement/exposure leading to overheating; minor operational detail.
+Frequent humidity readings near zero indicate extreme aridity,Severely dry air conditions create extreme moisture loss potential.,1,Extreme aridity indicator; environmental only.
+Frequent near-saturation humidity indicates condensation-prone environment,High humidity reflects conditions favorable for dew accumulation.,1,Near-saturation humidity; no behavioral linkage.
+Sudden cooling events indicate shade transitions or cloud cover,Rapid temperature drops reflect environmental shielding from thermal input.,2,Shows shading/cloud cover patterns at site; minor context exposure.
+Temperature trends reveal seasonal transitions,Gradual long-term warming or cooling represents movement into new seasons.,1,Seasonal climate shift; no personal or identity signal.
+Humidity trends reveal seasonal moisture shifts,Sustained rise or fall in humidity reflects climatic moisture changes.,1,Seasonal humidity change; environmental only.
+Predictable temperature patterns reflect stable sensor placement,"A consistent diurnal curve suggests an unobstructed, fixed environmental exposure.",2,Implies fixed/consistent placement; minor installation detail.
+Abrupt irregular fluctuations indicate local disturbances,Unpredictable variations may indicate airflow turbulence or shading changes.,2,Local disturbances (wind/shade shifts) implied; low operational exposure.
+Prolonged high-temperature plateaus suggest sustained sunlight exposure,Extended periods of warmth imply no shading interruptions.,2,Reveals shading/exposure characteristics; minor context signal.
+Prolonged low-temperature plateaus suggest consistent shading,Long periods of low heat reflect shaded or insulated environments.,2,Consistent shading/insulation implied; minor site profiling.
+Rising humidity during cooling periods indicates dewpoint proximity,Humidity increases as temperature drops signal approaching condensation threshold.,1,Approaching condensation; environmental cue only.
+Falling humidity during heating periods indicates atmospheric drying,Humidity reduction during warming reflects moisture depletion from the air.,1,Heating-driven drying; no personal info.
+Strong temperature swings indicate low thermal buffering,Rapid heating and cooling imply minimal environmental insulation.,2,Low buffering reveals exposure/insulation traits; minor site context.
+Weak temperature swings indicate high thermal buffering,Stable temperatures reflect shaded or vegetated environments that moderate heat.,2,High buffering implies shade/vegetation/insulation; minor context exposure.
+Repeated nightly humidity peaks indicate regular dew formation,Consistent humidity rises at night imply predictable moisture cycles.,1,Predictable dew cycle; environmental only.
+Lack of nighttime humidity rise indicates dry nocturnal conditions,Humidity that stays low overnight reflects persistently dry air masses.,1,Persistently dry nights; no personal exposure.
+Persistent mid-range temperature and humidity reflect moderate climate,Balanced readings show neither extreme heat nor dryness.,1,Moderate climate indicator; no personal data.
+Temperature volatility with humidity stability indicates heat-sensitive environment,"Heat fluctuates while moisture remains constant, revealing thermal variability.",1,Heat shifts without moisture change; environmental only.
+Humidity volatility with temperature stability indicates moisture-sensitive microclimate,Moisture levels shift independently while temperature stays constant.,1,Moisture shifts with stable temp; environmental only.
+Simultaneous rise in temperature and humidity indicates warm-moist air intrusion,"Hot and humid spikes together reflect a high-energy, moisture-rich environment.",1,Warm-moist air event; no personal detail.
+Simultaneous drop in temperature and humidity indicates cold-dry front,"Both values falling together suggest entry of cool, dry air.",1,Cold-dry front signal; environmental only.
+High-frequency fluctuations reflect turbulent atmospheric conditions,"Rapid oscillations in readings imply unstable, wind-affected microclimate.",1,Turbulent atmosphere; no personal or operational data.
+Low-frequency fluctuations reflect calm environmental conditions,Slow and smooth changes indicate atmospheric stability.,1,Calm conditions signal; environmental only.
+Temperature anomalies relative to diurnal patterns indicate altered exposure,"Unexpected highs or lows suggest shading, sensor movement, or microenvironment disruptions.",2,Altered exposure hints at shading/placement changes; minor operational context.
+Humidity anomalies reflect sudden atmospheric moisture introduction or removal,Out-of-pattern humidity readings reveal unexpected moisture conditions.,1,Unexpected moisture shifts; environmental only.
+Long-term declining humidity indicates progressive atmospheric drying,A multi-day downward trend shows systematic moisture loss from the environment.,1,Drying trend; no behavioral linkage.
+Long-term rising humidity indicates increasing atmospheric moisture,Upward humidity movement reflects sustained moisture accumulation.,1,Moistening trend; environmental only.
+Humidity stability with temperature change indicates independent moisture behavior,"Moisture remains constant even as heat fluctuates, signaling heat-dominant dynamics.",1,Moisture unaffected by heat changes; environmental cue.
+Temperature stability with humidity change indicates independent moisture shifts,"Humidity varies despite stable heat, showing moisture-driven conditions.",1,Humidity changes with steady temp; environmental only.
