@@ -1,0 +1,75 @@
+Inference,Description,Score,Short rationale
+Nighttime flow anomaly detection,"Alerts occurring during hours of expected inactivity indicate leaks, valve failures, or unauthorized water usage.",4,Encodes “should be inactive” windows; nighttime anomalies reveal absence/occupancy and possible unauthorized use.
+Morning usage surge inference,Repeated anomalies at the start of the day correlate with high-demand appliance or fixture use.,3,Captures morning peak routines and high-demand fixtures/appliances.
+Weekend vs. weekday anomaly asymmetry,Differences in anomaly frequency across weekdays infer variations in occupant activity patterns.,3,Reveals work-week vs weekend activity patterns and lifestyle rhythm.
+Seasonal flow anomaly trend,Increased anomalies during hot seasons suggest heightened water use or pipe stress.,2,"Mostly indicates climate-driven usage or pipe stress, weak per-person linkage."
+Sustained anomaly duration,Long anomaly intervals imply continuous flow from pipe bursts or stuck valves.,2,Long high flow shows bursts/stuck valves; property risk more than behavior.
+Short anomaly bursts,Brief spikes indicate appliance cycle changes or pressure shocks.,2,Brief spikes tied to cycles/pressure shocks; mild appliance/usage hint only.
+Anomaly onset time precision,Repeated anomalies at identical times suggest scheduled systems like irrigation.,3,"Fixed-time anomalies (e.g., irrigation) encode precise schedules of automated use."
+Flow anomaly clustering,Clusters of alerts indicate progressive system failure or cascading events.,1,Clusters show progressive system failure; no meaningful behavior profiling.
+Pre-event anomaly patterning,Flow spikes before high-use periods may reflect pressure buildup or regulator faults.,2,"Pre-high-use spikes mostly speak to pressure/regulator faults, weak behavioral link."
+Flow decay timing,The speed at which anomalies resolve indicates valve responsiveness.,1,Indicates valve responsiveness; purely mechanical.
+High-magnitude spike identification,Very large anomalies reveal major bursts or uncontrolled discharge.,1,"Major bursts/uncontrolled discharge; severity of event, not user behavior."
+Low-magnitude persistent anomalies,Small but frequent anomalies suggest micro-leaks or slow-running fixtures.,2,Micro-leaks/slow fixtures; property condition with minimal behavior signal.
+Flow variance analysis,Increased fluctuation amplitude indicates unstable water pressure.,1,Unstable pressure characterization; hydraulic only.
+Sharp-ramp anomaly pattern,Rapid flow escalation suggests sudden pipe failure.,1,Sudden flow escalation → pipe failure; structural risk.
+Plateaued anomaly profile,Sustained high-flow anomalies indicate continuous open flow like stuck toilet valves.,2,"Continuous open flow (e.g., stuck toilet); some implicit fixture-use negligence."
+Flow overshoot effect,A spike above typical maximum flow implies water hammer or pump surges.,1,Water hammer/pump surges; physical phenomenon.
+Pressure-drop-correlated anomaly,Flow spikes followed by sudden drops suggest burst-pipe depressurization.,1,Burst-pipe depressurization; infrastructure health.
+Anomaly signature uniqueness,Repeated anomaly shapes fingerprint specific appliance behaviors.,3,Appliance “fingerprints” reveal which appliances exist and how they run.
+Active leak inference,Continuous abnormal flow during inactivity strongly indicates downstream leakage.,3,Continuous abnormal flow during inactivity encodes away/asleep windows and leak presence.
+Burst pipe detection,Sudden sustained high-flow anomalies reflect catastrophic pipe rupture.,2,"Catastrophic event; large property impact, little direct behavioral detail."
+Toilet fill valve failure detection,Moderate continuous flow signals a stuck float or fill valve.,2,Shows faulty toilet hardware and moderate continuous use; weak behavior link.
+Drip-to-stream progression detection,Flow anomalies that intensify over time suggest evolving leaks.,2,Leak evolution over time; asset degradation more than behavior.
+Appliance hose rupture detection,Large sustained flows followed by nonzero baselines indicate hose rupture.,2,"Large sustained flow from hose; event severity, limited profiling."
+Outdoor fixture exposure,Anomalies during irrigation hours suggest faulty irrigation valves or pipes.,3,Irrigation-hour anomalies reveal outdoor watering schedules and habits.
+Backflow event inference,Reverse-flow signatures imply siphoning or back-pressure events.,1,Hydraulic backflow patterns; non-personal.
+Valve malfunction inference,Slow-start or slow-end anomalies imply partially stuck valves.,1,Partially stuck valves; mechanical.
+Pressure regulator failure,Wide anomaly magnitude variation suggests regulator malfunction.,1,Regulator malfunction; system state only.
+Underground pipe leak identification,"Mild, long-term anomalies indicate subterranean leakage.",2,"Subterranean leakage; site-specific vulnerability, minimal behavioral info."
+Occupancy pattern inference,Fewer anomalies during absence and more during presence reveal occupancy rhythms.,4,Directly reconstructs presence/absence and daily occupancy rhythms.
+Guest or event detection,Sudden increases in anomalies correlate with increased household activity.,4,Spikes during gatherings reveal social events and unusual high-activity periods.
+Forgotten fixture detection,Continuous anomalies show taps left open or incomplete appliance cycles.,3,Continuous anomalies from unattended fixtures show forgetfulness and time-of-neglect patterns.
+Unauthorized water use pattern,Nighttime anomalies suggest tampering or unauthorized consumption.,4,Strong security/privacy signal: tampering or use during “should be idle” times.
+Child-related fixture misuse,Recurring small anomalies at certain periods reflect accidental fixture use.,4,Encodes presence and behavior patterns of children (a sensitive household attribute).
+Cleaning cycle inference,Clusters of anomalies correspond to high-water-use cleaning activity.,3,Clusters tied to cleaning routines reveal household chore schedules.
+Travel / absence confirmation,Absence of anomalies during known vacancy validates occupancy status.,4,Confirms periods of full vacancy; serious security/occupancy implication.
+Pump malfunction detection,Repeating high-flow surges indicate a failing or cycling pump.,1,Repeating high-flow surges from pump; mechanical.
+Mechanical vibration signature,Tiny rapid spikes reflect vibration-induced micro-flow.,2,Tiny rapid spikes when machinery runs; weak signal of equipment use timing.
+Sediment blockage precursor,Intermittent anomalies followed by flow reduction suggest sediment shifts.,1,Sediment-related anomalies; hydraulic.
+Filter clog detection,High initial anomaly then decreasing flow indicates filter clogging.,1,Filter clogging pattern; maintenance state only.
+Air pocket discharge signature,Short anomaly bursts reflect trapped air being expelled.,1,Trapped air events; non-personal.
+Water hammer susceptibility,Rapid extreme spikes indicate pressure shock events.,1,Pressure shock behavior; structural.
+Aging infrastructure indicator,Increasing anomaly count over time reflects weakening pipelines.,1,Rising anomaly count over time; infrastructure age.
+Flow recovery latency analysis,Slow return to normal flow indicates valve or pressure lag.,1,Lag in returning to normal; valve/pressure characteristics.
+Upstream vs. downstream anomaly inference,Faster recovery suggests anomalies near fixtures; slower recovery suggests upstream stress.,1,Localizes stress zone; network topology only.
+Zonal high-demand inference,Repeated similar anomalies imply heavy usage in specific water branches.,3,Repeated anomalies in branches show which zones/rooms are heavy users.
+Pipe diameter mismatch detection,Unique anomaly curves reveal constriction effects from incorrect pipe sizing.,1,Reveals sizing issues; purely design/installation info.
+Multi-level usage correlation,Two-step anomaly curves indicate water use across multiple floors.,3,Two-step curves show activity across floors (potentially different units/households).
+Branch failure identification,Persistent anomalies point to failures in major pipe branches.,1,Persistent anomalies in main branches; structural.
+Structural vibration leakage clue,Repetitive tiny anomalies during machinery operation suggest vibration transfer to pipes.,2,Links machinery operation to small anomalies; weak operational pattern.
+Distance-to-source inference,Longer anomaly duration correlates with greater distance to the main shutoff.,1,Estimates distance from anomaly to shutoff; physical layout.
+Seasonal irrigation need detection,More anomalies in dry months imply irrigation-driven anomalies.,2,More anomalies in dry months show irrigation demand; mild behavior link.
+Freeze–thaw stress inference,Sudden anomalies during cold weather indicate freeze-induced pipe cracking.,1,Cold-weather spikes; environmental stress on pipes.
+High-demand weather correlation,More anomalies during heat waves imply evaporative cooling or outdoor water use.,3,Anomalies during heat waves reveal increased outdoor/evaporative use patterns.
+Underground soil saturation influence,Anomalies correlating with rain indicate soil-induced pipe pressure.,2,Correlation with rain/soil conditions; site vulnerability more than behavior.
+Water theft anomaly signature,High-flow anomalies during unoccupied periods can indicate unauthorized usage.,4,High-flow anomalies when unoccupied strongly indicate theft/unauthorized use.
+Slope-dependent gravity flow inference,Slow-tapering anomalies indicate gravity-fed drainage or runoff.,1,Gravity-fed drainage/runoff behavior; physical only.
+Appliance signature fingerprinting,Unique anomaly spikes classify appliance types.,3,"Classifies appliance types and use profiles, enabling lifestyle/device profiling."
+Pressure-driven oscillation detection,Rhythmic anomalies reveal pressure feedback issues.,1,Rhythmic anomalies from feedback; non-personal.
+Partial obstruction inference,Anomalies that increase but never reach high-flow thresholds indicate pipe constriction.,1,Constriction/partial blockage; hydraulic.
+Post-maintenance anomaly shift,Drop in anomaly frequency confirms repair success.,1,Confirms repair effectiveness; maintenance metadata only.
+Simultaneous multi-source flow inference,Multi-peaked anomalies suggest concurrent fixture usage.,3,Multi-peaked anomalies show concurrent fixture usage and combined habits.
+Water profile stability degradation,Increasing anomaly unpredictability reflects declining hydraulic stability.,1,Declining hydraulic stability; system state.
+Anomaly aging curve,Changes in anomaly shape over time predict future failure probability.,1,Shape evolution as failure predictor; asset-health only.
+Hydraulic resonance detection,Repetitive oscillatory anomalies indicate resonance in pipes.,1,Resonance in pipes; mechanical.
+Leak-before-break signature,Gradually escalating anomaly severity suggests looming pipe failure.,1,Gradually escalating anomalies; structural risk.
+Micro-intrusion detection,Very small repetitive anomalies reflect micro-cracks.,1,Very small repetitive anomalies from micro-cracks; minimal behavioral content.
+Fixture misalignment diagnosis,Anomalies during fixture use imply internal misalignment causing resistance.,1,Misaligned fixture internals; technical.
+Unexpected pressure propagation mapping,Time-shifted anomaly waves indicate unusual pressure propagation paths.,1,Unusual pressure paths; network behavior.
+Valve seating condition inference,Anomalies during valve closing indicate imperfect seating.,1,Imperfect valve seating; mechanical.
+Transient negative-flow signature,Reverse anomalies indicate siphoning or pressure collapse.,1,Reverse flow from siphoning/pressure collapse; hydraulic.
+Water storage tank dynamics detection,Anomalies reveal tank fill cycles or overflow events.,2,Tank fill/overflow cycles; weakly reveals building-level usage cycles.
+Pipe aging vs. usage correlation,Higher anomalies during peak usage imply wear-sensitive segments.,3,Points to segments stressed under peak usage → links wear to usage patterns.
+Sub-threshold anomaly drift,Baseline anomaly increases suggest growing internal stress.,1,Growing baseline stress; system health only.
+Hydraulic mixing disturbances,Irregular anomaly patterns indicate abnormal interaction between hot and cold lines.,1,Abnormal hot/cold line interaction; design/maintenance issue.

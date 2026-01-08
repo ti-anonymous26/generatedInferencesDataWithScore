@@ -1,0 +1,58 @@
+Inference,Description,Score,Short rationale
+Freeze-threshold proximity detection,Temperature readings approaching freezing indicate pipes are at immediate risk of ice formation.,1,Just indicates freezing risk on pipes.
+Rapid temperature drop warning,A sudden drop in temperature suggests exposure to cold air or a failing insulation barrier.,1,Structural exposure / insulation failure hint only.
+Sustained sub-freezing exposure,Extended time below freezing increases the chance of ice buildup and potential pipe bursts.,1,"Duration of cold; pipe damage risk, not behavior."
+Freeze–thaw cycling inference,Repeated temperature crossings around freezing weaken pipe material due to expansion and contraction.,1,"Material stress cycles, no user info."
+Localized freeze zone identification,Specific sensors consistently showing lower temperatures reveal vulnerable cold spots.,2,Reveals particularly vulnerable pipe locations in the property.
+Freeze onset rate analysis,"The speed of cooling indicates how quickly the pipe loses heat, informing insulation effectiveness.",1,"Cooling speed → insulation effectiveness, not behavior."
+Pre-freeze thermal lag detection,A gradual temperature decline suggests partial insulation; a sudden drop suggests direct cold exposure.,1,Partial vs direct exposure; structural.
+Insulation effectiveness assessment,Stable temperatures despite external fluctuations indicate good insulation.,1,Quality of insulation; purely physical.
+Insulation failure detection,Sudden cold readings in insulated regions signal insulation failure.,2,Pinpoints failed insulated regions; property vulnerability.
+Heat-leak mapping,Higher temperatures in certain pipe sections reveal proximity to heat sources.,1,Shows where pipes are near heat sources; layout info.
+Thermal gradient identification,Differences between temperature sensors show where heat accumulates or escapes.,1,Where heat accumulates/escapes; structural only.
+Cold-spot mapping,Persistently low readings identify the most vulnerable sections to freezing.,2,Identifies persistently cold sections; important for risk but not people.
+Thermal bridging detection,Localized cooling patterns indicate conductive pathways such as metal supports.,1,Conductive pathways info; physical.
+Buried vs. exposed pipe inference,"Exposed pipes show greater temperature swings, while buried pipes remain more stable.",1,Exposure vs buried state; installation detail.
+Hot water usage event detection,Temperature spikes signal activation of hot-water fixtures or appliances.,3,Directly reflects times hot-water fixtures/appliances are used.
+Cold water surge identification,Sudden temperature drops reveal cold-water flow initiation.,3,Maps cold-water use events and timing.
+Flow vs. no-flow differentiation,Dynamic temperature fluctuations indicate flowing water; stable readings indicate stagnant water.,2,Indicates when water is moving vs stagnant; mild occupancy proxy.
+Simultaneous multi-fixture use inference,Complex temperature curves reveal concurrent water use across fixtures.,3,"Reveals combined fixture usage patterns (e.g., shower + sink)."
+Water heater recovery pattern,Gradual temperature rise after use indicates heater recharge cycles.,3,Shows when heavy hot-water use happens via recharge cycles.
+Low-flow trickle signature,Slow temperature drift suggests micro-leaks or low-volume trickles.,2,Suggests micro-leaks/low trickles; property condition with weak behavior link.
+Ambient cold intrusion detection,Temperature drop during weather shifts reveals cold-air intrusion near pipes.,2,Shows cold-air intrusion spots; building envelope issue.
+Diurnal temperature cycle mapping,Temperature curves that match outdoor temperature cycles indicate insufficient thermal buffering.,2,"Indicates pipes track outdoor cycles → poor buffering, little behavior."
+Weather–pipe temperature correlation,Strong correlation suggests pipes are directly exposed to ambient conditions.,1,Exposure to ambient weather; structural.
+Subsurface thermal stability inference,Minimal variation suggests pipes are buried or thermally protected.,1,Buried/thermally protected pipes; layout only.
+Wind-driven cooling effect,Rapid cooling rates indicate air-exposed pipe segments affected by wind.,1,Wind-exposed segments; physical.
+Cold-draft detection,Sharp cooling events reveal new or worsening drafts near plumbing.,2,Reveals drafts near plumbing; property envelope details.
+Pipe material heat retention signature,Fast temperature changes suggest metal pipes; gradual changes suggest plastic.,1,Infers pipe material; non-personal.
+Thermal expansion stress detection,Consistently high readings indicate expansion stress on joints.,1,High temps stressing joints; structural.
+Thermal shock vulnerability,Extreme temperature swings reveal susceptibility to stress fractures.,1,Extreme swings → stress fractures; no behavior.
+Residual heat dissipation rate,Cooling curves after hot flow reveal thermal conductivity and pipe wall thickness.,1,Cooling curves reveal thermal conductivity; material-focused.
+Material fatigue progression,Repeated heating/cooling cycles indicate long-term fatigue risk.,1,Fatigue risk from cycles; structural.
+Hot spot identification,Persistent hot zones indicate malfunctioning appliances or unintended heating.,2,Persistent hot zones may indicate always-on or malfunctioning devices.
+Thermal inversion signal,Rapid warming after deep cold suggests ice plug melting and imminent burst risk.,1,Ice plug melting risk; pipe condition only.
+Ice-plug formation inference,"Flat, low-temperature readings suggest frozen, stagnant sections.",1,Frozen stagnant sections; structural.
+Pre-burst pressure buildup indicator,Temperature anomalies paired with reduced flow imply freeze blockage.,1,Freeze blockage and pressure; system health.
+Pipe thaw event detection,Rising temperatures after freezing conditions reveal thaw transitions and high burst risk.,1,Thaw transitions with burst risk; structural.
+Localized freeze progression mapping,Sequential sensor cooling identifies freeze spread direction.,1,Direction of freeze spread; purely physical.
+Heater malfunction detection,Slow or incomplete heating indicates heater performance issues.,2,"Faulty heater; appliance status, weak user profiling."
+Water recirculation pump status,Stable elevated temperatures indicate active recirculation.,2,Shows whether recirc is running; may imply schedule but mild.
+Energy efficiency inference,Rapid temperature loss indicates poor thermal retention.,2,Poor thermal retention; building efficiency profile.
+Standby heat loss detection,Fast cooling of hot lines when idle indicates poor insulation.,2,Loss from idle hot lines; property efficiency.
+Thermal load analysis,Temperature curves reveal how effectively the system retains and distributes heat.,2,How system retains/distributes heat; mainly system-level.
+Occupancy pattern inference,Hot-water temperature activity correlates with resident routines.,4,Explicitly infers resident routines from hot-water temperature activity.
+Sleep-hour confirmation,Flat temperature readings during late hours imply inactivity.,4,Flat curves at late hours encode likely sleep/inactivity windows.
+Travel/vacancy detection,Multiple days of stable temperature readings indicate absence.,4,Multi-day stability indicates absence/vacancy; strong occupancy signal.
+Appliance schedule identification,Repeating temperature patterns reveal scheduled appliance cycles.,3,Repeating patterns reveal scheduled appliance cycles.
+Shower duration inference,Duration of elevated temperature periods corresponds to shower length.,3,Elevated temperature duration gives shower times/lengths (daily routine).
+Cross-line thermal interference,Cold-line warming during hot use indicates backflow or proximity heating.,1,Warming of cold line from proximity/backflow; hydraulic/installation.
+Anomalous thermal spike signature,Sudden spikes signal thermostat drift or heating component issues.,1,"Component/thermostat issues, not user behavior."
+Thermal noise floor analysis,Micro-fluctuations indicate micro-leaks or ultra-low flow.,2,Micro-fluctuations hint at micro-leaks/ultra-low flow.
+Hidden cavity temperature buffering,Stable readings suggest pipe routing through insulated cavities.,1,Indicates routing through insulated cavities; structural.
+Geothermal influence detection,Consistently warm underground pipes reflect geothermal soil heating.,1,Warm underground pipes from soil heating; location/soil info.
+Thermal dampening coefficient inference,Heating/cooling curve shapes estimate material thermal properties.,1,Material property estimation; no user link.
+Thermostatic mixer malfunction detection,Oscillating temperatures during hot water use indicate valve faults.,2,Faulty mixer behavior; appliance state.
+Solar heating influence,Daytime warming in exposed pipes reveals solar radiation effects.,1,Daytime warming from sun; exposure only.
+Hot-water backflow detection,Cold-line warming indicates backflow due to valve malfunction.,1,Backflow into cold line; plumbing issue.
+Thermal asymmetry mapping,Uneven temperatures across sensors indicate inconsistent installation or thermal exposure.,1,Uneven sensor temps show inconsistent installation/exposure.
